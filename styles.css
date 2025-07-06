@@ -1,0 +1,131 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  background: url('https://www.transparenttextures.com/patterns/stardust.png'),
+    linear-gradient(135deg, #0a0a0a, #1a3c54);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  background-color: #42445A;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+/* Relógio */
+.clock {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+  background-color: #6969A0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#new-task {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+#add-task-btn {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add-task-btn:hover {
+  background-color: #4c078b;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #eaeaea;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #d4d4d4;
+}
+
+.filter-btn.active {
+  background-color: #6a0dad;
+  color: white;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  background-color: #d9f0d9;
+  opacity: 0.7;
+}
+
+.task-item button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ff4d4d;
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.task-item button:hover {
+  transform: scale(1.2);
+}
